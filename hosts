@@ -1,2 +1,2 @@
 [tor-routers]
-192.168.0.4
+wifimaclet-tor-cova ansible_user=root ansible_host=192.168.0.4
