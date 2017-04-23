@@ -1,0 +1,19 @@
+SOCKSPort 0 # Disabe SOCKS5 port
+VirtualAddrNetwork 192.168.255.0/24
+AutomapHostsOnResolve 1
+TransPort 9040
+#TransListenAddress 192.168.2.1
+DNSPort 5353
+#DNSListenAddress 192.168.2.1
+
+## Relay: what port to advertise for incoming Tor connections.
+#ORPort 9001
+
+#RelayBandwidthRate 100 KBytes  # Throttle traffic to 100KB/s (800Kbps)
+#RelayBandwidthBurst 200 KBytes # But allow bursts up to 200KB (1600Kb)
+
+ExitPolicy reject *:* # no exits allowed
+
+## Bridge relays (or "bridges") are Tor relays that aren't listed in the
+## main directory.
+#BridgeRelay 1
