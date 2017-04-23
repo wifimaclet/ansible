@@ -1,2 +1,3 @@
-- name: restart tor
-  service: name=tor state=restarted
+handlers:
+	- name: Restart tor
+	  service: name=tor state=restarted enabled=true
