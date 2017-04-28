@@ -5,5 +5,5 @@
     apt: name=tor state=present
 
   - name: Configure tor
-    copy: src=../../../torrc dest=/etc/tor/torrc
+    copy: src=../../../files/torrc dest=/etc/tor/torrc
     notify: Restart tor
