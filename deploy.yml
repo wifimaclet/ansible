@@ -1,0 +1,6 @@
+- name: Deploy tor routers
+  hosts: tor-routers
+
+  roles:
+    - tor
+

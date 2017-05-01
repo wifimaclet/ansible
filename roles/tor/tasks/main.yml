@@ -1,9 +1,6 @@
-- hosts: tor-routers
+- name: Install tor
+  apt: name=tor state=present
 
-  tasks:
-  - name: Install tor
-    apt: name=tor state=present
-
-  - name: Configure tor
-    copy: src=../../../files/torrc dest=/etc/tor/torrc
-    notify: Restart tor
+- name: Configure tor
+  copy: src=../../../files/torrc dest=/etc/tor/torrc
+  notify: Restart tor
