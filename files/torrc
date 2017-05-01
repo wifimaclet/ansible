@@ -1,5 +1,5 @@
 SOCKSPort 0 # Disabe SOCKS5 port
-VirtualAddrNetwork 192.168.255.0/24
+VirtualAddrNetwork 172.16.0.0/16
 AutomapHostsOnResolve 1
 TransPort 9040
 #TransListenAddress 192.168.2.1
